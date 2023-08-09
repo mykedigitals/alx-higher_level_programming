@@ -63,6 +63,3 @@ You can only use no more than 2 print functions with string format
 You can only use one loop in your code
 You are not allowed to store numbers or strings in a variable
 You are not allowed to import any module
-
-
-

@@ -1,4 +1,4 @@
-#Write a function that finds all multiples of 2 in a list.
+"""Write a function that finds all multiples of 2 in a list."""
 
 #!/usr/bin/python3
 

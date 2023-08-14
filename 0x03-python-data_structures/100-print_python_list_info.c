@@ -11,7 +11,7 @@
 
 void print_python_list_info(PyObject *p)
 {
-	int qtty, alloc, i;
+	int qtty, alloc, pik;
 	PyObject *maat;
 
 	qtty = Py_SIZE(p);
@@ -20,10 +20,10 @@ void print_python_list_info(PyObject *p)
 	printf("[*] Size of the Python List = %d\n", qtty);
 	printf("[*] Allocated = %d\n", alloc);
 
-	for (i = 0; i < qtty; i++)
+	for (pik = 0; pik < qtty; pik++)
 	{
-		printf("Element %d: ", i);
-		maat = PyList_GetItem(p, i);
+		printf("Element %d: ", pik);
+		maat = PyList_GetItem(p, pik);
 		printf("%s\n", Py_TYPE(maat)->tp_name);
 	}
 }

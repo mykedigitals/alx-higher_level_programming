@@ -11,14 +11,14 @@
 
 void print_python_list_info(PyObject *p)
 {
-	int qtty, alloc, pik;
+	int qtty, designate, pik;
 	PyObject *maat;
 
 	qtty = Py_SIZE(p);
-	alloc = ((PyListObject *)p)->allocated;
+	designate = ((PyListObject *)p)->allocated;
 
 	printf("[*] Size of the Python List = %d\n", qtty);
-	printf("[*] Allocated = %d\n", alloc);
+	printf("[*] Allocated = %d\n", designate);
 
 	for (pik = 0; pik < qtty; pik++)
 	{

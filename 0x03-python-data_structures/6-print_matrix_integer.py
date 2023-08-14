@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    for pik in range(len(matrix)):
-        for trik in range(len(matrix[pik])):
-            print("{:d}".format(matrix[pik][trik]), end="")
-            if trik != len(matrix[pik]) -1):
-            print(" ", end="")
-        print("")
+    for pik in matrix:
+        for trik in pik:
+                print("{:d}".format(trik), end="" if trik == pik[-1] else " ")
+        print()

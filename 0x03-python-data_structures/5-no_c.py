@@ -3,8 +3,5 @@
 #!/usr/bin/python3
 
 def no_c(my_string):
-    str = ""
-    for pik in my_string:
-        if pik is not 'c' and pik is not 'C':
-            str = str + 1
-    return str
+    copy = [x for x in my_string if x != 'c' and x != 'C']
+    return ("".join(copy))

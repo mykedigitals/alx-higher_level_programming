@@ -11,16 +11,16 @@
 
 void print_python_list_info(PyObject *p)
 {
-	int size, alloc, i;
+	int qtty, alloc, i;
 	PyObject *maat;
 
-	size = Py_SIZE(p);
+	qtty = Py_SIZE(p);
 	alloc = ((PyListObject *)p)->allocated;
 
-	printf("[*] Size of the Python List = %d\n", size);
+	printf("[*] Size of the Python List = %d\n", qtty);
 	printf("[*] Allocated = %d\n", alloc);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < qtty; i++)
 	{
 		printf("Element %d: ", i);
 		maat = PyList_GetItem(p, i);
